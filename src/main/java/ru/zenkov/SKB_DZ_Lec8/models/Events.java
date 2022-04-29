@@ -9,7 +9,6 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -21,7 +20,7 @@ public class Events {
 
     @ManyToOne
     @JsonBackReference
-    private ToDo todo;
+    private Todo todo;
 
     private String event;
 }
